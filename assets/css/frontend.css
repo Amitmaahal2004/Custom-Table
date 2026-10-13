@@ -1,0 +1,211 @@
+/**
+ * DEFE Custom Tables - Scoped Frontend Styles
+ * Fully isolated to prevent any interference with theme, WooCommerce, or Elementor tables.
+ */
+
+/* Container Wrapper */
+.defe-custom-table-wrapper {
+    margin: 0px 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: var(--defe-body-color, #333333);
+}
+
+.defe-custom-table-wrapper *,
+.defe-custom-table-wrapper *::before,
+.defe-custom-table-wrapper *::after {
+    box-sizing: border-box;
+}
+
+/* Frontend Title */
+.defe-custom-table-title {
+    margin: 0 0 10px 0;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #040707;
+}
+
+
+.defe-custom-table .defe-more-than-4-words {
+    min-width: 200px;
+}
+
+.defe-custom-table thead tr th, .defe-custom-table tbody tr td {
+    word-break: unset;
+}
+
+.defe-custom-table thead tr th:first-child, .defe-custom-table tbody tr td:first-child {
+        white-space: nowrap;
+}
+
+
+/* Frontend Description */
+.defe-custom-table-description {
+    margin: 0 0 40px 0;
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+    color:#868989;
+}
+
+.defe-custom-table-description p {
+    margin: 0 0 8px 0;
+}
+
+.defe-custom-table-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* Extra Content Lines */
+.defe-custom-table-extra {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #6B7280;
+}
+
+.defe-custom-table-extra-before {
+    margin-bottom: 12px;
+}
+
+.defe-custom-table-extra-after {
+    margin-top: 12px;
+}
+
+.defe-custom-table-extra-line {
+    margin-bottom: 6px;
+}
+
+.defe-custom-table-extra-line:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Scroll Container - Prevents page level overflow */
+.defe-custom-table-scroll {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--defe-border-radius, 8px);
+    border: var(--defe-border-width, 1px) var(--defe-border-style, solid) var(--defe-border-color, #E5E7EB);
+    background: var(--defe-body-bg, #FFFFFF);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Base HTML Table */
+.defe-custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    margin: 0 !important;
+    background: transparent;
+    font-size: var(--defe-font-size, 14px);
+    line-height: 1.5;
+    border: none !important;
+}
+
+/* Header Styles */
+.defe-custom-table thead {
+    background-color: var(--defe-header-bg, #009C3B);
+    color: var(--defe-header-color, #FFFFFF);
+}
+
+.defe-custom-table thead th {
+    font-family: "Nunito";
+    background-color: var(--defe-header-bg, #009C3B) !important;
+    color: var(--defe-header-color, #FFFFFF) !important;
+    font-size: var(--defe-header-font-size, 15px);
+    font-weight: var(--defe-header-font-weight, 600);
+    padding: var(--defe-cell-padding, 12px);
+    vertical-align: var(--defe-vertical-align, middle);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: none;
+    border-left: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    white-space: normal;
+    word-break: break-word;
+}
+
+.defe-custom-table thead th:last-child {
+    border-right: none;
+}
+
+/* Body Cells */
+.defe-custom-table tbody tr  {
+    background-color: var(--defe-body-bg, #FFFFFF);
+    transition: background-color 0.15s ease;
+}
+
+.defe-custom-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+
+.defe-custom-table tbody td {
+    font-family: "Nunito";
+    padding: var(--defe-cell-padding, 12px);
+    vertical-align: var(--defe-vertical-align, middle);
+    border-bottom: 1px solid var(--defe-border-color, #E5E7EB);
+    border-right: 1px solid var(--defe-border-color, #E5E7EB);
+    border-top: none;
+    border-left: none;
+    color: var(--defe-body-color, #333333);
+    word-break: break-word;
+}
+
+.defe-custom-table tbody td:last-child {
+    border-right: none;
+}
+
+.defe-custom-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Zebra Striping */
+.defe-custom-table-zebra tbody tr:nth-child(even) {
+    background-color: var(--defe-zebra-bg, #F9FAFB);
+}
+
+/* Total / Footer Row */
+.defe-custom-table tfoot {
+    background-color: var(--defe-total-bg, #F0FDF4);
+    border-top: 1px solid var(--defe-border-color, #E5E7EB);
+}
+
+.defe-custom-table tfoot tr {
+    background-color: var(--defe-total-bg, #F0FDF4);
+}
+
+.defe-custom-table tfoot td {
+    font-family: "Nunito";
+    padding: var(--defe-cell-padding, 12px);
+    vertical-align: var(--defe-vertical-align, middle);
+    font-size: var(--defe-footer-font-size, 14px);
+    font-weight: var(--defe-total-weight, 700);
+    color: var(--defe-total-color, #009C3B);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: none;
+    border-top: 1px solid var(--defe-border-color, #E5E7EB);
+}
+
+.defe-custom-table tfoot td:last-child {
+    border-right: none;
+}
+
+/* Scroll Indicators on Mobile Touch Devices */
+@media (max-width: 768px) {
+    .defe-custom-table-scroll {
+        position: relative;
+    }
+
+    .defe-custom-table {
+        min-width: 580px;
+        /* Ensures wide tables scroll naturally rather than squishing text */
+    }
+}
